@@ -25,14 +25,17 @@ RUN pip install -U geopandas \
                    mixpanel \
                    GeoAlchemy2 \
 		   opencv-python \
-		   cv2 \
 		   numpy \
 		   scipy \
 		   matplotlib \
 		   ipython \
 		   jupyter \
-		   sys \
-		   pandas
+		   pandas \
+		   tensorflow \
+                   scikit-learn \
+                   pillow \
+                   h5py \
+                   keras
 
 VOLUME /notebooks
 WORKDIR /notebooks
