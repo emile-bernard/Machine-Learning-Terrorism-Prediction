@@ -1,6 +1,13 @@
-# global-terrorism-prediction
+# Machine-Learning-Terrorism-Prediction
 
 This project contains a basic docker-compose jupyter notebook data science stack. The goal of this project is to predict and classify terrorism incidents using the [Global Terrorism DB of worldwide terrorism incidents since 1970](https://www.kaggle.com/ecodan/global-terrorism-db).
+
+## Setup
+
+- Extract the zipped dataset into the notebooks/Machine-Learning-Terrorism-Prediction/data folder
+
+
+- Convert the dataset from ODF to CSV format. This can be done using LibreOffice and saving the dataset file into the CSV file format.
 
 ## Run the stack
 
