@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  jupyter:
+    container_name: jupyter
+    restart: unless-stopped
+    ports:
+      - "8888:8888"
+    build:
+      context: ./jupyter
+    volumes:
+          - "./notebooks:/notebooks"
