@@ -98,3 +98,9 @@ alias ds='docker stats --format "table {{.Name}}\t{{.Container}}\t{{.CPUPerc}}\t
 ## Articles
 
 - [Global Terrorism DB](https://www.kaggle.com/ecodan/global-terrorism-db)
+
+- [Introduction to Data Visualization in Python](https://towardsdatascience.com/introduction-to-data-visualization-in-python-89a54c97fbed)
+
+- [Visualizing Data with Pairs Plots in Python](https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166)
+
+- [Visualization with Seaborn](https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html)
