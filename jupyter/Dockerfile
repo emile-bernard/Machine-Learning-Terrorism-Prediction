@@ -27,6 +27,7 @@ RUN pip install -U geopandas \
 		   opencv-python \
 		   numpy \
 		   scipy \
+		   seaborn \
 		   matplotlib \
 		   ipython \
 		   jupyter \
