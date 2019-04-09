@@ -5,38 +5,37 @@ RUN python --version
 RUN conda install --quiet --yes -c \
     conda-forge osmnx dask
 
-RUN pip install -U geopandas \
-                   geopy \
-                   rtree \
-                   folium \
-                   shapely \
-                   fiona \
-                   six \
-                   pyproj \
-                   numexpr==2.6.4 \
-                   elasticsearch \
-                   geojson \
-                   plotly \
-                   tqdm \
-                   mapboxgl \
-                   cufflinks \
-                   geohash2 \
-                   tables \
-                   mixpanel \
-                   GeoAlchemy2 \
-		   opencv-python \
-		   numpy \
-		   scipy \
-		   seaborn \
-		   matplotlib \
-		   ipython \
-		   jupyter \
-		   pandas \
-		   tensorflow \
-                   scikit-learn \
-                   pillow \
-                   h5py \
-                   keras
+RUN pip install -U cufflinks \
+		elasticsearch \
+		fiona \
+		folium \
+		GeoAlchemy2 \
+		geohash2 \
+		geojson \
+		geopandas \
+		geopy \
+		h5py \
+		ipython \
+		jupyter \
+		keras \
+		mapboxgl \
+		matplotlib \
+		mixpanel \
+		numexpr==2.6.4 \
+		numpy \
+		pandas \
+		pillow \
+		plotly \
+		pyproj \
+		rtree \
+		scikit-learn \
+		scipy \
+		seaborn \
+		shapely \
+		six \
+		tables \
+		tensorflow \
+		tqdm
 
 VOLUME /notebooks
 WORKDIR /notebooks

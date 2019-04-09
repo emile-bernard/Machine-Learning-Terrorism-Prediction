@@ -6,8 +6,19 @@ This project contains a basic docker-compose jupyter notebook data science stack
 
 - Extract the zipped dataset into the notebooks/Machine-Learning-Terrorism-Prediction/data folder
 
-
 - Convert the dataset from ODF to CSV format. This can be done using LibreOffice and saving the dataset file into the CSV file format.
+
+## Build the stack
+
+- Default build
+```
+$ docker-compose build
+```
+
+- Clean build
+```
+$ docker-compose build --no-cache 
+```
 
 ## Run the stack
 
@@ -83,6 +94,8 @@ $ docker volume rm $(docker volume ls -qf dangling=true)
 alias ds='docker stats --format "table {{.Name}}\t{{.Container}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.NetIO}}\t{{.BlockIO}}\t{{.MemPerc}}\t{{.PIDs}}"'
 ```
 
+## Articles
+
 ### Docker
 
 - [Pass environment variables to containers](https://docs.docker.com/compose/environment-variables/#pass-environment-variables-to-containers)
@@ -95,12 +108,24 @@ alias ds='docker stats --format "table {{.Name}}\t{{.Container}}\t{{.CPUPerc}}\t
 
 - [Docker ELK stack for devops](https://medium.com/tech-tajawal/elk-stack-docker-playground-for-devops-221179ca00dd)
 
-## Articles
+### Preprocessing
 
-- [Global Terrorism DB](https://www.kaggle.com/ecodan/global-terrorism-db)
+- [Splitting CSV Into Train And Test Data](https://medium.com/themlblog/splitting-csv-into-train-and-test-data-1407a063dd74)
 
-- [Introduction to Data Visualization in Python](https://towardsdatascience.com/introduction-to-data-visualization-in-python-89a54c97fbed)
+- [Feature scaling](https://jovianlin.io/feature-scaling/)
 
-- [Visualizing Data with Pairs Plots in Python](https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166)
+- [Why how and when to scale your features](https://medium.com/greyatom/why-how-and-when-to-scale-your-features-4b30ab09db5e)
+
+- [Scikit-learn feature scaling documentation](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_all_scaling.html)
+
+### Keras
+
+- [6 Steps to Create Your First Deep Neural Network using Keras and Python](https://gogul09.github.io/software/first-neural-network-keras)
+
+### Python for data analysis
+
+- [Python for data analysis](http://chris35wills.github.io/courses/pydata_stack/)
 
 - [Visualization with Seaborn](https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html)
+
+- [Seaborn example gallery](https://seaborn.pydata.org/examples/index.html)
